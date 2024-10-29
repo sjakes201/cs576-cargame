@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gordo\\OneDrive\\Documents\\GitHub\\cs576-cargame\\CS576 car game\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|c:\\users\\gordo\\onedrive\\documents\\github\\cs576-cargame\\cs576 car game\\assets\\scripts\\fun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "fun.cs",
+              "DocumentMoniker": "C:\\Users\\gordo\\OneDrive\\Documents\\GitHub\\cs576-cargame\\CS576 car game\\Assets\\Scripts\\fun.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\fun.cs",
+              "ToolTip": "C:\\Users\\gordo\\OneDrive\\Documents\\GitHub\\cs576-cargame\\CS576 car game\\Assets\\Scripts\\fun.cs",
+              "RelativeToolTip": "Assets\\Scripts\\fun.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-29T21:09:15.787Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
