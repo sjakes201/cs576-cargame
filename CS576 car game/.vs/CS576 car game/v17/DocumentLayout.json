@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\gordo\\OneDrive\\Documents\\GitHub\\cs576-cargame\\CS576 car game\\",
+  "WorkspaceRootPath": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|C:\\Users\\gordo\\OneDrive\\Documents\\GitHub\\cs576-cargame\\CS576 car game\\assets\\scripts\\fun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\fun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|c:\\users\\sjake\\desktop\\projects\\cs576-cargame\\cs576 car game\\assets\\scripts\\drivecar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\drivecar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|c:\\users\\gordo\\onedrive\\documents\\github\\cs576-cargame\\cs576 car game\\assets\\scripts\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|c:\\users\\sjake\\desktop\\projects\\cs576-cargame\\cs576 car game\\assets\\scripts\\camerafollowcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camerafollowcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "test.cs",
-              "DocumentMoniker": "C:\\Users\\gordo\\OneDrive\\Documents\\GitHub\\cs576-cargame\\CS576 car game\\Assets\\Scripts\\test.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\test.cs",
-              "ToolTip": "C:\\Users\\gordo\\OneDrive\\Documents\\GitHub\\cs576-cargame\\CS576 car game\\Assets\\Scripts\\test.cs",
-              "RelativeToolTip": "Assets\\Scripts\\test.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "CameraFollowCar.cs",
+              "DocumentMoniker": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\Scripts\\CameraFollowCar.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CameraFollowCar.cs",
+              "ToolTip": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\Scripts\\CameraFollowCar.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CameraFollowCar.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAACNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T21:11:22.242Z",
+              "WhenOpened": "2024-11-19T18:35:11.307Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "fun.cs",
-              "DocumentMoniker": "C:\\Users\\gordo\\OneDrive\\Documents\\GitHub\\cs576-cargame\\CS576 car game\\Assets\\Scripts\\fun.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\fun.cs",
-              "ToolTip": "C:\\Users\\gordo\\OneDrive\\Documents\\GitHub\\cs576-cargame\\CS576 car game\\Assets\\Scripts\\fun.cs",
-              "RelativeToolTip": "Assets\\Scripts\\fun.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "DriveCar.cs",
+              "DocumentMoniker": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\Scripts\\DriveCar.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\DriveCar.cs",
+              "ToolTip": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\Scripts\\DriveCar.cs",
+              "RelativeToolTip": "Assets\\Scripts\\DriveCar.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAYwAQAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-29T21:09:15.787Z",
+              "WhenOpened": "2024-11-19T18:13:32.879Z",
               "EditorCaption": ""
             }
           ]
