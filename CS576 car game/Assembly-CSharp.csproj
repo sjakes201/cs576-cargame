@@ -62,8 +62,8 @@
   <ItemGroup>
     <Compile Include="Assets\Nick_Stuff\PROMETEO - Car Controller\Scripts\PrometeoCarController.cs" />
     <Compile Include="Assets\Nick_Stuff\PROMETEO - Car Controller\Scripts\PrometeoTouchInput.cs" />
-    <Compile Include="Assets\Scripts\test.cs" />
-    <Compile Include="Assets\Scripts\fun.cs" />
+    <Compile Include="Assets\Nick_Stuff\speedMonitor.cs" />
+    <Compile Include="Assets\Nick_Stuff\stop.cs" />
     <Compile Include="Assets\Nick_Stuff\PROMETEO - Car Controller\Scripts\CameraFollow.cs" />
   </ItemGroup>
   <ItemGroup>
