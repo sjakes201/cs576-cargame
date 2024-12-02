@@ -10,7 +10,7 @@ public class CarController : MonoBehaviour
     public float maxWheelAngle = 30f;
     public float turnSpeed = 2f;
 
-    private float currentSpeed = 0f;
+    public float currentSpeed = 0f;
     private float currentWheelAngle = 0f;
 
     void Update()
