@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|c:\\users\\sjake\\desktop\\projects\\cs576-cargame\\cs576 car game\\assets\\scripts\\stopsignzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\stopsignzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|c:\\users\\sjake\\desktop\\projects\\cs576-cargame\\cs576 car game\\assets\\scripts\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|c:\\users\\sjake\\desktop\\projects\\cs576-cargame\\cs576 car game\\assets\\scripts\\speedlimitzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\speedlimitzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\assets\\scripts\\camerafollowcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camerafollowcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\assets\\scripts\\stopsignzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\stopsignzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\assets\\scripts\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\carcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|c:\\users\\sjake\\desktop\\projects\\cs576-cargame\\cs576 car game\\assets\\scripts\\stoplightzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\stoplightzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\assets\\scripts\\stoplight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\stoplight.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,37 +34,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "SpeedLimitZone.cs",
+              "DocumentMoniker": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\Scripts\\SpeedLimitZone.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SpeedLimitZone.cs",
+              "ToolTip": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\Scripts\\SpeedLimitZone.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SpeedLimitZone.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T15:23:00.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StopLight.cs",
+              "DocumentMoniker": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\Scripts\\StopLight.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\StopLight.cs",
+              "ToolTip": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\Scripts\\StopLight.cs",
+              "RelativeToolTip": "Assets\\Scripts\\StopLight.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAADoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T15:10:34.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StopLightZone.cs",
+              "DocumentMoniker": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\Scripts\\StopLightZone.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\StopLightZone.cs",
+              "ToolTip": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\Scripts\\StopLightZone.cs",
+              "RelativeToolTip": "Assets\\Scripts\\StopLightZone.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T15:00:58.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "CarController.cs",
               "DocumentMoniker": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\Scripts\\CarController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CarController.cs",
               "ToolTip": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\Scripts\\CarController.cs",
               "RelativeToolTip": "Assets\\Scripts\\CarController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAYwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-02T14:50:43.168Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "StopSignZone.cs",
               "DocumentMoniker": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\Scripts\\StopSignZone.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\StopSignZone.cs",
               "ToolTip": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\Scripts\\StopSignZone.cs",
               "RelativeToolTip": "Assets\\Scripts\\StopSignZone.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAZAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD0AAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-02T14:37:16.877Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "CameraFollowCar.cs",
               "DocumentMoniker": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\Scripts\\CameraFollowCar.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CameraFollowCar.cs",
@@ -60,7 +111,8 @@
               "RelativeToolTip": "Assets\\Scripts\\CameraFollowCar.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAACNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T18:35:11.307Z"
+              "WhenOpened": "2024-11-19T18:35:11.307Z",
+              "EditorCaption": ""
             }
           ]
         }

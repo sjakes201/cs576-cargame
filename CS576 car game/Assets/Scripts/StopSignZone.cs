@@ -2,32 +2,31 @@ using UnityEngine;
 
 public class StopSignZone : MonoBehaviour
 {
-    public GameObject car; 
-    private bool hasStopped = false; 
+    private bool hasStopped = false;
     private float carSpeed = 0f;
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject == car)
+        if (other.CompareTag("Car")) 
         {
-            hasStopped = false; 
+            hasStopped = false;
             Debug.Log("Entered Stop Zone. You must stop!");
         }
         else
         {
-            Debug.Log("Not car");
+            Debug.Log("Not a car");
         }
     }
 
     void OnTriggerStay(Collider other)
     {
-        if (other.gameObject == car)
+        if (other.CompareTag("Car")) 
         {
-            CarController carController = car.GetComponent<CarController>();
+            CarController carController = other.GetComponent<CarController>();
             if (carController != null)
             {
                 carSpeed = Mathf.Abs(carController.currentSpeed);
-                if (carSpeed <= 0.1f) 
+                if (carSpeed <= 0.1f)
                 {
                     hasStopped = true;
                     Debug.Log("Car has stopped in the zone.");
@@ -38,12 +37,12 @@ public class StopSignZone : MonoBehaviour
 
     void OnTriggerExit(Collider other)
     {
-        if (other.gameObject == car)
+        if (other.CompareTag("Car")) 
         {
-            if (!hasStopped) 
+            if (!hasStopped)
             {
                 Debug.Log("Failed to stop at the stop sign!");
-                onFailToStop(); 
+                onFailToStop();
             }
             else
             {
@@ -55,11 +54,11 @@ public class StopSignZone : MonoBehaviour
 
     public void onFailToStop()
     {
-        // TODO
+        // TODO record failure
     }
 
     public void onSuccessfulStop()
     {
-
+        // TODO record success
     }
 }
