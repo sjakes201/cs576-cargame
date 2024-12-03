@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\gordo\\OneDrive\\Documents\\GitHub\\cs576-cargame\\CS576 car game\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|c:\\users\\gordo\\onedrive\\documents\\github\\cs576-cargame\\cs576 car game\\assets\\nick_stuff\\speedzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|solutionrelative:assets\\nick_stuff\\speedzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|C:\\Users\\gordo\\OneDrive\\Documents\\GitHub\\cs576-cargame\\CS576 car game\\assets\\nick_stuff\\speedmonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|solutionrelative:assets\\nick_stuff\\speedmonitor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|c:\\users\\gordo\\onedrive\\documents\\github\\cs576-cargame\\cs576 car game\\assets\\nick_stuff\\stop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|solutionrelative:assets\\nick_stuff\\stop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,28 +31,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "speedZone.cs",
+              "DocumentMoniker": "C:\\Users\\gordo\\OneDrive\\Documents\\GitHub\\cs576-cargame\\CS576 car game\\Assets\\Nick_Stuff\\speedZone.cs",
+              "RelativeDocumentMoniker": "Assets\\Nick_Stuff\\speedZone.cs",
+              "ToolTip": "C:\\Users\\gordo\\OneDrive\\Documents\\GitHub\\cs576-cargame\\CS576 car game\\Assets\\Nick_Stuff\\speedZone.cs",
+              "RelativeToolTip": "Assets\\Nick_Stuff\\speedZone.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T00:24:09.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "speedMonitor.cs",
+              "DocumentMoniker": "C:\\Users\\gordo\\OneDrive\\Documents\\GitHub\\cs576-cargame\\CS576 car game\\Assets\\Nick_Stuff\\speedMonitor.cs",
+              "RelativeDocumentMoniker": "Assets\\Nick_Stuff\\speedMonitor.cs",
+              "ToolTip": "C:\\Users\\gordo\\OneDrive\\Documents\\GitHub\\cs576-cargame\\CS576 car game\\Assets\\Nick_Stuff\\speedMonitor.cs",
+              "RelativeToolTip": "Assets\\Nick_Stuff\\speedMonitor.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-01T22:19:10.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "stop.cs",
               "DocumentMoniker": "C:\\Users\\gordo\\OneDrive\\Documents\\GitHub\\cs576-cargame\\CS576 car game\\Assets\\Nick_Stuff\\stop.cs",
               "RelativeDocumentMoniker": "Assets\\Nick_Stuff\\stop.cs",
               "ToolTip": "C:\\Users\\gordo\\OneDrive\\Documents\\GitHub\\cs576-cargame\\CS576 car game\\Assets\\Nick_Stuff\\stop.cs",
               "RelativeToolTip": "Assets\\Nick_Stuff\\stop.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-01T21:55:48.278Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "PrometeoCarController.cs",
               "DocumentMoniker": "C:\\Users\\gordo\\OneDrive\\Documents\\GitHub\\cs576-cargame\\CS576 car game\\Assets\\Nick_Stuff\\PROMETEO - Car Controller\\Scripts\\PrometeoCarController.cs",
               "RelativeDocumentMoniker": "Assets\\Nick_Stuff\\PROMETEO - Car Controller\\Scripts\\PrometeoCarController.cs",
               "ToolTip": "C:\\Users\\gordo\\OneDrive\\Documents\\GitHub\\cs576-cargame\\CS576 car game\\Assets\\Nick_Stuff\\PROMETEO - Car Controller\\Scripts\\PrometeoCarController.cs",
               "RelativeToolTip": "Assets\\Nick_Stuff\\PROMETEO - Car Controller\\Scripts\\PrometeoCarController.cs",
-              "ViewState": "AgIAAPYAAAAAAAAAAAAgwA8BAABfAAAAAAAAAA==",
+              "ViewState": "AgIAAA0BAAAAAAAAAAAowA8BAABfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-01T21:20:03.17Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-01T21:20:03.17Z"
             }
           ]
         }
