@@ -29,11 +29,11 @@ public class StopSignZone : MonoBehaviour
     {
         if (other.CompareTag("Car")) 
         {
-            CarController carController = other.GetComponent<CarController>();
+            PrometeoCarController carController = other.GetComponent<PrometeoCarController>();
             if (carController != null)
             {
-                carSpeed = Mathf.Abs(carController.currentSpeed);
-                if (carSpeed <= 0.1f)
+                carSpeed = Mathf.Abs(carController.carSpeed);
+                if (carSpeed <= 0.01f)
                 {
                     hasStopped = true;
                     Debug.Log("Car has stopped in the zone.");

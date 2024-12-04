@@ -7,23 +7,29 @@ public class SpeedLimitZone : MonoBehaviour
     private bool isCooldown = false;
     private ScoreManager scoreManager;
 
+    private Rigidbody carRigidbody;
+
     private void Start()
     {
         scoreManager = FindObjectOfType<ScoreManager>();
+        GameObject car = GameObject.FindGameObjectWithTag("Car");
+        carRigidbody = car.GetComponent<Rigidbody>();        
     }
 
     void OnTriggerStay(Collider other)
     {
         if (isCooldown || !other.CompareTag("Car")) return;
 
-        CarController carController = other.GetComponent<CarController>();
+        PrometeoCarController carController = other.GetComponent<PrometeoCarController>();
         if (carController != null)
         {
-            float carSpeed = Mathf.Abs(carController.currentSpeed);
+            //float carSpeed = Mathf.Abs(carController.carSpeed);
+            float carSpeed = carRigidbody.velocity.magnitude * 3;
             if (carSpeed > speedLimit)
             {
                 float surplus = carSpeed - speedLimit;
                 onSpeed(surplus);
+                Debug.Log("Speed: " + carSpeed);
                 StartCoroutine(Cooldown());
             }
         }
