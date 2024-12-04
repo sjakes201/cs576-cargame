@@ -1,9 +1,16 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class StopSignZone : MonoBehaviour
 {
     private bool hasStopped = false;
     private float carSpeed = 0f;
+    private ScoreManager scoreManager;
+
+    private void Start()
+    {
+        scoreManager = FindObjectOfType<ScoreManager>();
+    }
 
     void OnTriggerEnter(Collider other)
     {
@@ -54,7 +61,8 @@ public class StopSignZone : MonoBehaviour
 
     public void onFailToStop()
     {
-        // TODO record failure
+        // TODO record failure     
+        scoreManager.DeductPoints(10);
     }
 
     public void onSuccessfulStop()
