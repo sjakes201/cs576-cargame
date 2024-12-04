@@ -3,12 +3,6 @@ using UnityEngine;
 public class StopLightZone : MonoBehaviour
 {
     public StopLight stopLight;
-    private ScoreManager scoreManager;
-
-    private void Start()
-    {
-        scoreManager = FindObjectOfType<ScoreManager>();
-    }
 
     void OnTriggerEnter(Collider other)
     {
@@ -38,7 +32,6 @@ public class StopLightZone : MonoBehaviour
     public void OnBreakRules()
     {
         // TODO failure logic
-        scoreManager.DeductPoints(15);
     }
 
     public void OnObeyRules()
