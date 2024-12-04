@@ -60,19 +60,18 @@
   </PropertyGroup>
   <ItemGroup>
     <Analyzer Include="C:\Users\ymyang\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.0.4\Analyzers\Microsoft.Unity.Analyzers.dll" />
-    <Analyzer Include="C:\Users\ymyang\My project (7)\Library\PackageCache\com.unity.collab-proxy@2.6.0\Lib\Editor\unityplastic.dll" />
-    <Analyzer Include="C:\Users\ymyang\My project (7)\Library\PackageCache\com.unity.collab-proxy@2.6.0\Lib\Editor\Unity.Plastic.Newtonsoft.Json.dll" />
-    <Analyzer Include="C:\Users\ymyang\My project (7)\Library\PackageCache\com.unity.collab-proxy@2.6.0\Lib\Editor\log4netPlastic.dll" />
-    <Analyzer Include="C:\Users\ymyang\My project (7)\Library\PackageCache\com.unity.collab-proxy@2.6.0\Lib\Editor\Unity.Plastic.Antlr3.Runtime.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.45f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.45f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\PROMETEO - Car Controller\Scripts\PrometeoTouchInput.cs" />
     <Compile Include="Assets\Traffic Lights System\Scripts\HaloTrafficLight.cs" />
     <Compile Include="Assets\Traffic Lights System\Scripts\RealTrafficLight.cs" />
     <Compile Include="Assets\Traffic Lights System\Scripts\TrafficLightBase.cs" />
+    <Compile Include="Assets\PROMETEO - Car Controller\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Traffic Lights System\Scripts\TrafficLightManager.cs" />
     <Compile Include="Assets\Traffic Lights System\Demo\Scripts\TL_Demo.cs" />
+    <Compile Include="Assets\PROMETEO - Car Controller\Scripts\PrometeoCarController.cs" />
     <Compile Include="Assets\Traffic Lights System\Scripts\TrafficLightPhase.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -100,6 +99,7 @@
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\TrafficControl_KurotatsuStudios\KurotatsuStudiosReadMe.txt" />
+    <None Include="Assets\PROMETEO - Car Controller\Fonts\Licence.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
