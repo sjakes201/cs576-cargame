@@ -64,7 +64,7 @@ public class TrafficAI : MonoBehaviour
         Vector3 rightOffset = transform.right * 2f;
         if (Physics.Raycast(transform.position + rightOffset, transform.forward, detectionDistance, detectionLayers))
         {
-            // 可以在这里实现变道逻辑
+            // To Do: Implement lane changing logic
         }
     }
 
