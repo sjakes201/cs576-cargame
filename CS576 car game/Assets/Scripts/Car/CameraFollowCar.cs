@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class CameraFollow : MonoBehaviour
+public class CameraFollowJake : MonoBehaviour
 {
     public Transform carTransform; // The car to follow
     public Vector3 offset = new Vector3(0f, 5f, -10f); // Offset from the car
