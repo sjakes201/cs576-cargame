@@ -1,4 +1,4 @@
-# Ignore Unity's Temp folder and other generated folders
+# Unity generated folders
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
@@ -6,3 +6,63 @@
 [Bb]uilds/
 [Ll]ogs/
 [Uu]ser[Ss]ettings/
+
+# Crash and error reports
+/[Cc]rash[nN]umbering.txt
+/[Ss]tacktrace.log
+
+# Unity auto-generated files
+*.pidb
+*.booproj
+*.sln
+*.csproj
+*.userprefs
+
+# Mono/Visual Studio specific files
+*.user
+*.userosscache
+*.suo
+*.csproj.user
+*.unityproj
+
+# Rider specific files
+.idea/
+*.sln.iml
+
+# Windows specific files
+Thumbs.db
+Desktop.ini
+
+# macOS specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Version control generated files
+*.diff
+*.patch
+*.orig
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.lock
+*.log
+*.gz
+
+# External asset packages
+*.unitypackage
+
+# Visual Studio Code specific files
+.vscode/
+
+# Exclude local configuration files for Collaborate
+.collab/
+
+# Addressable Assets Data
+/Assets/AddressableAssetsData/*
+
+# Exclude custom cache and generated files
+/Generated/
