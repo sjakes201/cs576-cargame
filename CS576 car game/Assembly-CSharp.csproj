@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets\PROMETEO - Car Controller\Scripts\PrometeoTouchInput.cs" />
     <Compile Include="Assets\Scripts\TrafficZones\StopLightZone.cs" />
+    <Compile Include="Assets\Scripts\Scoresheet\ScoreManager.cs" />
     <Compile Include="Assets\Scripts\TrafficZones\SpeedLimitZone.cs" />
     <Compile Include="Assets\PROMETEO - Car Controller\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Score&amp;Speed\ScoreManager.cs" />
