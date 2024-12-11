@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\MainMenu\MainMenuLogic.cs" />
     <Compile Include="Assets\Scripts\Car\CameraFollowCar.cs" />
     <Compile Include="Assets\Scripts\Car\CarController.cs" />
+    <Compile Include="Assets\Nick_Stuff\PoliceCarChase.cs" />
     <Compile Include="Assets\Scripts\Score&amp;Speed\speedTracker.cs" />
     <Compile Include="Assets\Scripts\TrafficZones\StopLight.cs" />
     <Compile Include="Assets\PROMETEO - Car Controller\Scripts\PrometeoCarController.cs" />
