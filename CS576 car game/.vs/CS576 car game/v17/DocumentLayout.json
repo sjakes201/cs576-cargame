@@ -3,11 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|c:\\users\\sjake\\desktop\\projects\\cs576-cargame\\cs576 car game\\assets\\scripts\\scoresheet\\scoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|c:\\users\\sjake\\desktop\\projects\\cs576-cargame\\cs576 car game\\assets\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|solutionrelative:assets\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|c:\\users\\sjake\\desktop\\projects\\cs576-cargame\\cs576 car game\\assets\\helibehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|solutionrelative:assets\\helibehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|c:\\users\\sjake\\desktop\\projects\\cs576-cargame\\cs576 car game\\assets\\helispawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|solutionrelative:assets\\helispawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\assets\\scripts\\scoresheet\\scoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scoresheet\\scoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|c:\\users\\sjake\\desktop\\projects\\cs576-cargame\\cs576 car game\\assets\\scripts\\mainmenu\\mainmenulogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\assets\\scripts\\mainmenu\\mainmenulogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenu\\mainmenulogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,11 +30,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HeliSpawner.cs",
+              "DocumentMoniker": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\HeliSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\HeliSpawner.cs",
+              "ToolTip": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\HeliSpawner.cs",
+              "RelativeToolTip": "Assets\\HeliSpawner.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T20:31:23.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Test.cs",
+              "DocumentMoniker": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\Test.cs",
+              "RelativeDocumentMoniker": "Assets\\Test.cs",
+              "ToolTip": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\Test.cs",
+              "RelativeToolTip": "Assets\\Test.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T20:29:57.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HeliBehavior.cs",
+              "DocumentMoniker": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\HeliBehavior.cs",
+              "RelativeDocumentMoniker": "Assets\\HeliBehavior.cs",
+              "ToolTip": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\HeliBehavior.cs",
+              "RelativeToolTip": "Assets\\HeliBehavior.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T20:25:33.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ScoreManager.cs",
               "DocumentMoniker": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\Scripts\\Scoresheet\\ScoreManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Scoresheet\\ScoreManager.cs",
@@ -30,12 +81,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Scoresheet\\ScoreManager.cs",
               "ViewState": "AQIAACoAAAAAAAAAAAAYwDsAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T18:40:58.823Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-04T18:40:58.823Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "MainMenuLogic.cs",
               "DocumentMoniker": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\Scripts\\MainMenu\\MainMenuLogic.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenu\\MainMenuLogic.cs",
@@ -43,8 +93,7 @@
               "RelativeToolTip": "Assets\\Scripts\\MainMenu\\MainMenuLogic.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-02T16:06:07.702Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-02T16:06:07.702Z"
             }
           ]
         }

@@ -67,9 +67,13 @@
     <Compile Include="Assets\PROMETEO - Car Controller\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Score&amp;Speed\ScoreManager.cs" />
     <Compile Include="Assets\Scripts\TrafficZones\StopSignZone.cs" />
+    <Compile Include="Assets\HeliSpawner.cs" />
     <Compile Include="Assets\Scripts\MainMenu\MainMenuLogic.cs" />
+    <Compile Include="Assets\Test.cs" />
     <Compile Include="Assets\Scripts\Car\CameraFollowCar.cs" />
+    <Compile Include="Assets\Scripts\HelicopterBehavior.cs" />
     <Compile Include="Assets\Scripts\Car\CarController.cs" />
+    <Compile Include="Assets\HeliBehavior.cs" />
     <Compile Include="Assets\Scripts\Score&amp;Speed\speedTracker.cs" />
     <Compile Include="Assets\Scripts\TrafficZones\StopLight.cs" />
     <Compile Include="Assets\PROMETEO - Car Controller\Scripts\PrometeoCarController.cs" />
