@@ -7,11 +7,11 @@
       "RelativeMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|solutionrelative:assets\\nick_stuff\\policecarchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|c:\\users\\gordo\\onedrive\\documents\\github\\cs576-cargame\\cs576 car game\\assets\\scripts\\score\u0026speed\\speedtracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|C:\\Users\\gordo\\OneDrive\\Documents\\GitHub\\cs576-cargame\\CS576 car game\\assets\\scripts\\score\u0026speed\\speedtracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\score\u0026speed\\speedtracker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|c:\\users\\gordo\\onedrive\\documents\\github\\cs576-cargame\\cs576 car game\\assets\\scripts\\trafficzones\\speedlimitzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|C:\\Users\\gordo\\OneDrive\\Documents\\GitHub\\cs576-cargame\\CS576 car game\\assets\\scripts\\trafficzones\\speedlimitzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\trafficzones\\speedlimitzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -54,8 +54,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Score\u0026Speed\\speedTracker.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T20:17:16.438Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T20:17:16.438Z"
             },
             {
               "$type": "Document",
@@ -65,7 +64,7 @@
               "RelativeDocumentMoniker": "Assets\\Nick_Stuff\\PoliceCarChase.cs",
               "ToolTip": "C:\\Users\\gordo\\OneDrive\\Documents\\GitHub\\cs576-cargame\\CS576 car game\\Assets\\Nick_Stuff\\PoliceCarChase.cs",
               "RelativeToolTip": "Assets\\Nick_Stuff\\PoliceCarChase.cs",
-              "ViewState": "AgIAAHAAAAAAAAAAAAAcwJEAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-07T20:07:41.929Z",
               "EditorCaption": ""
@@ -80,8 +79,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Car\\CameraFollowCar.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T16:14:38.033Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-04T16:14:38.033Z"
             },
             {
               "$type": "Document",
@@ -104,8 +102,7 @@
               "RelativeToolTip": "Assets\\Scripts\\TrafficZones\\StopSignZone.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T00:14:01.24Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-04T00:14:01.24Z"
             },
             {
               "$type": "Document",
@@ -117,8 +114,7 @@
               "RelativeToolTip": "Assets\\Scripts\\TrafficZones\\StopLightZone.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T00:13:42.731Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-04T00:13:42.731Z"
             },
             {
               "$type": "Document",
@@ -130,8 +126,7 @@
               "RelativeToolTip": "Assets\\Scripts\\TrafficZones\\SpeedLimitZone.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T00:12:47.26Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-04T00:12:47.26Z"
             },
             {
               "$type": "Document",
