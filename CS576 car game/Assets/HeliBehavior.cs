@@ -19,20 +19,22 @@ public class HelicopterFollow : MonoBehaviour
     private float currentFollowSpeed;
     private float fixedY; // Fixed Y-coordinate to lock movement height
 
+    public bool CanSeePlayerPublic { get; private set; } // Public canSeePlayer for the police car
+
     void Start()
     {
         fixedY = transform.position.y; // Store the initial Y position
 
         if (player == null)
         {
-            GameObject playerObject = GameObject.FindGameObjectWithTag("Car");
+            GameObject playerObject = GameObject.FindGameObjectWithTag("CarBody");
             if (playerObject != null)
             {
                 player = playerObject.transform;
             }
             else
             {
-                Debug.LogError("Player with tag 'Car' not found!");
+                Debug.LogError("Player with tag 'CarBody' not found!");
             }
         }
 
@@ -46,6 +48,7 @@ public class HelicopterFollow : MonoBehaviour
         if (player == null) return;
 
         bool seesPlayer = CanSeePlayer();
+        CanSeePlayerPublic = seesPlayer;
 
         if (seesPlayer)
         {
@@ -82,7 +85,7 @@ public class HelicopterFollow : MonoBehaviour
 
         if (Physics.Raycast(rayOrigin, directionToPlayer, out RaycastHit hit, raycastDistance))
         {
-            if (hit.collider.CompareTag("Car"))
+            if (hit.collider.CompareTag("CarBody"))
             {
                 Debug.DrawLine(rayOrigin, hit.point, Color.green);
                 return true;
