@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 // Script written by Nick
 
@@ -14,7 +15,7 @@ public class PoliceCarChase : MonoBehaviour
     private bool isChasing = false; // Flag to track if the cop is currently chasing
     public float minDistFromPlayer = 5f; // The minimum distance the cop can get to the player, to avoid weird collisions
     private Rigidbody playerCar; // Reference to the player's Rigidbody
-    private float currSpeed = 0f; // Current speed of the police car
+    //private float currSpeed = 0f; // Current speed of the police car
     private float chaseTime = 0f; // Time the police car has been chasing
     public float chaseTimeLimit = 7.5f; // Police car gets fatigued after this time limit
 
@@ -24,12 +25,16 @@ public class PoliceCarChase : MonoBehaviour
 
     public HelicopterFollow helicopter; // Reference to the helicopter
 
+    private NavMeshAgent cop; // Reference to the police car's Nav Mesh Agent
+
     void Start()
     {
         playerCar = GameObject.FindGameObjectWithTag("Car").GetComponent<Rigidbody>();
         GameObject helicopterObject = GameObject.FindGameObjectWithTag("Helicopter");
         if (helicopterObject != null) helicopter = helicopterObject.GetComponent<HelicopterFollow>();
 
+        cop = GetComponent<NavMeshAgent>();
+        cop.speed = 0;
     }
 
     void Update()
@@ -84,7 +89,6 @@ public class PoliceCarChase : MonoBehaviour
         // Cop becomes fatigued after the time limit is reached (maybe make time limit random?)
         if (chaseTime > chaseTimeLimit && !isFatigued) StartFatigue();
 
-
         // Handle fatigue slowdown logic
         // Slow down player for the fatigueDuration (maybe make fatigueDuration random?)
         if (isFatigued)
@@ -105,29 +109,27 @@ public class PoliceCarChase : MonoBehaviour
             return; // Stop further movement and chase
         }
 
-        // Target speed is calculated to be slightly faster than player, but no faster than maxSpeed
-        float targetSpeed = Mathf.Min(playerSpeed + 2f, maxSpeed);
+        // Calculates the minimum speed based on distance from player, but also ensures min speed is always at least 3f
+        float dynamicMinSpeed = Mathf.Max(3f + Mathf.FloorToInt(Vector3.Distance(transform.position, player.position) / 10f), 3f);
 
-        // Randomly slows the cop down if fatigued
-        if (isFatigued)
-        {
-            targetSpeed *= Random.Range(0.5f, 0.8f); // Apply random fatigue factor
-        }
+        // Determines target position and speed
+        float targetSpeed = Mathf.Min(playerSpeed + 1f, maxSpeed);
 
-        // Gradually adjust current speed towards the target speed
-        currSpeed = Mathf.MoveTowards(currSpeed, targetSpeed, Time.deltaTime);
-        //Debug.Log("Target Speed: " + targetSpeed);
-        //Debug.Log("Cop Current Speed: " + currSpeed * 3);
+        // Commented out another method of setting speed of police car
+        // Not sure which method is better, so leaving this here
 
-        // Simple player's next position prediction
-        Vector3 posPrediction = player.position + playerCar.velocity.normalized * 3f;
+        //// If fatigued, reduce speed
+        //if (isFatigued) cop.speed = maxSpeed * Random.Range(0.5f, 0.8f);
 
-        // Moves cop towards the predicted position
-        Vector3 playerDirection = (posPrediction - transform.position).normalized;
-        transform.position += playerDirection * currSpeed * Time.deltaTime;
+        //else cop.speed = Mathf.Min(playerSpeed + 1f, maxSpeed);
 
-        // Rotates police car model toward the prediction position
-        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(playerDirection), Time.deltaTime * 2f);
+        // Apply random fatigue factor
+        if (isFatigued) targetSpeed *= Random.Range(0.5f, 0.8f);
+
+        cop.speed = Mathf.MoveTowards(cop.speed, Mathf.Max(targetSpeed, dynamicMinSpeed), Time.deltaTime);
+        Debug.Log("Cop speed: " + cop.speed * 3);
+
+        cop.SetDestination(player.position);
     }
 
     private void StartFatigue()

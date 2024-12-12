@@ -8,6 +8,7 @@ TagManager:
   - Ground
   - Helicopter
   - CarBody
+  - Road
   layers:
   - Default
   - TransparentFX
