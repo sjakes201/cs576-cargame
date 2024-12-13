@@ -38,7 +38,8 @@ public class PedestrianAI : MonoBehaviour
 
     private void Update()
     {
-        if (!agent.pathStatus == NavMeshPathStatus.PathComplete && !isWaiting)
+    if (agent.pathStatus != NavMeshPathStatus.PathComplete && !isWaiting)
+
         {
             // check if the agent has reached the destination
             if (!agent.pathPending && agent.remainingDistance < 0.5f)
