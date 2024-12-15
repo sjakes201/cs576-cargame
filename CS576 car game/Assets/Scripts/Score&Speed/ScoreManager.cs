@@ -57,12 +57,9 @@ public class ScoreManager : MonoBehaviour
 
     public void AddPoints(int points, int type)
     {
-        if (score > 0)
-        {
-            score += Mathf.Min(points, score); // Ensure score does not go below 0
-
-            UpdateScoreText();
-        }
+      
+        score += Mathf.Max(points, score);
+        UpdateScoreText();
 
         // type 0 is stop signs
         if (type == 0)
