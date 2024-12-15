@@ -120,6 +120,10 @@ public class DynamicTileMapGenerator : MonoBehaviour
             return;
         }
 
+        // Exclude the IgnoreNavMesh layer from NavMesh baking
+        // Assign stop sign and stop light zones the "IgnoreNavMesh" layer
+        navMeshSurface.layerMask = ~LayerMask.GetMask("IgnoreNavMesh");
+
         // Clear and rebuild the NavMesh surface
         navMeshSurface.BuildNavMesh();
         Debug.Log("NavMesh baked successfully!");

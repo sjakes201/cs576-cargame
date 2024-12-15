@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7010510068493745913}
   - component: {fileID: 8972600300304768647}
   - component: {fileID: 1760118481646370348}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Stop_Zone_Sign
   m_TagString: Untagged
   m_Icon: {fileID: 0}
