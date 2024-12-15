@@ -38,11 +38,12 @@ public class StopLightZone : MonoBehaviour
     public void OnBreakRules()
     {
         // TODO failure logic
-        scoreManager.DeductPoints(15);
+        //scoreManager.DeductPoints(15);
+        scoreManager.failToStop(1);
     }
 
     public void OnObeyRules()
     {
-        // TODO success logic
+        scoreManager.AddPoints(5, 1);
     }
 }

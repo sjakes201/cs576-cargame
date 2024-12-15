@@ -63,29 +63,48 @@
     <Compile Include="Assets\PROMETEO - Car Controller\Scripts\PrometeoTouchInput.cs" />
     <Compile Include="Assets\Scripts\TrafficZones\StopLightZone.cs" />
     <Compile Include="Assets\Scripts\Scoresheet\ScoreManager.cs" />
+    <Compile Include="Assets\DenysAlmaral\CityPeople-FREE\Demo_Scenes\Scripts\DemoCamera.cs" />
     <Compile Include="Assets\Scripts\TrafficZones\SpeedLimitZone.cs" />
+    <Compile Include="Assets\Traffic Lights System\Scripts\RealTrafficLight.cs" />
+    <Compile Include="Assets\Traffic Lights System\Scripts\TrafficLightBase.cs" />
+    <Compile Include="Assets\Scripts\AI\TrafficAI.cs" />
     <Compile Include="Assets\PROMETEO - Car Controller\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Score&amp;Speed\ScoreManager.cs" />
+    <Compile Include="Assets\Traffic Lights System\Scripts\TrafficLightManager.cs" />
+    <Compile Include="Assets\Scripts\AI\PedestrainAI.cs" />
     <Compile Include="Assets\Scripts\TrafficZones\StopSignZone.cs" />
     <Compile Include="Assets\HeliSpawner.cs" />
     <Compile Include="Assets\Scripts\MainMenu\MainMenuLogic.cs" />
+    <Compile Include="Assets\Supercyan Character Pack Animal People Sample\Scripts\AccessoryLogic.cs" />
+    <Compile Include="Assets\Traffic Lights System\Demo\Scripts\TL_Demo.cs" />
     <Compile Include="Assets\Test.cs" />
     <Compile Include="Assets\Scripts\Car\CameraFollowCar.cs" />
+    <Compile Include="Assets\Supercyan Character Pack Animal People Sample\Scripts\FreeCameraLogic.cs" />
     <Compile Include="Assets\Scripts\HelicopterBehavior.cs" />
+    <Compile Include="Assets\Supercyan Character Pack Animal People Sample\Scripts\SimpleSampleCharacterControl.cs" />
     <Compile Include="Assets\Scripts\Car\CarController.cs" />
     <Compile Include="Assets\HeliBehavior.cs" />
+    <Compile Include="Assets\Scripts\AI\AISpawnManager.cs" />
+    <Compile Include="Assets\Supercyan Character Pack Animal People Sample\Scripts\AccessoryWearLogic.cs" />
+    <Compile Include="Assets\Supercyan Character Pack Animal People Sample\Scripts\DemoFree.cs" />
     <Compile Include="Assets\Nick_Stuff\PoliceCarChase.cs" />
+    <Compile Include="Assets\DenysAlmaral\CityPeople-FREE\Scripts\CityPeople.cs" />
     <Compile Include="Assets\Scripts\Score&amp;Speed\speedTracker.cs" />
     <Compile Include="Assets\Scripts\TrafficZones\StopLight.cs" />
     <Compile Include="Assets\PROMETEO - Car Controller\Scripts\PrometeoCarController.cs" />
+    <Compile Include="Assets\Traffic Lights System\Scripts\TrafficLightPhase.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\CS - Signs Free\Standard 2 Sided.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\Traffic Lights System\Info\README.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\Supercyan Character Pack Animal People Sample\Shaders\SupercyanShader.shader" />
+    <None Include="Assets\Supercyan Character Pack Animal People Sample\Shaders\SupercyanShaderLighting.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
@@ -95,11 +114,13 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\CS - Signs Free\Readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\TrafficControl_KurotatsuStudios\KurotatsuStudiosReadMe.txt" />
     <None Include="Assets\PROMETEO - Car Controller\Fonts\Licence.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
@@ -964,8 +985,16 @@
       <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.AI.Navigation">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Updater">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
@@ -1008,8 +1037,16 @@
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">

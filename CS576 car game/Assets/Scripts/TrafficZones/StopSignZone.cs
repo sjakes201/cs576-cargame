@@ -62,11 +62,13 @@ public class StopSignZone : MonoBehaviour
     public void onFailToStop()
     {
         // TODO record failure     
-        scoreManager.DeductPoints(10);
+        //scoreManager.DeductPoints(10);
+        scoreManager.failToStop(0);
     }
 
     public void onSuccessfulStop()
     {
         // TODO record success
+        scoreManager.AddPoints(5, 0);
     }
 }
