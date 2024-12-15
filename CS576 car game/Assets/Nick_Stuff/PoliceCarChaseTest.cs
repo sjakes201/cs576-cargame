@@ -32,7 +32,7 @@ public class PoliceCarChaseTest : MonoBehaviour
     void Start()
     {
         playerCar = GameObject.FindGameObjectWithTag("Car").GetComponent<Rigidbody>();
-        GameObject helicopterObject = GameObject.FindGameObjectWithTag("Helicopter");
+        //GameObject helicopterObject = GameObject.FindGameObjectWithTag("Helicopter");
         //if (helicopterObject != null) helicopter = helicopterObject.GetComponent<HelicopterFollow>();
 
         cop = GetComponent<NavMeshAgent>();
