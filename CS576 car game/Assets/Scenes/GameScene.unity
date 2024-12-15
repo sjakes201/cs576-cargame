@@ -184,7 +184,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3001691315129367550, guid: 8a8f57edf3523624eb9f886833e8e97a, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: CarBody
       objectReference: {fileID: 0}
     - target: {fileID: 3294564219125457607, guid: 8a8f57edf3523624eb9f886833e8e97a, type: 3}
       propertyPath: m_Name
@@ -437,6 +437,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1416896788}
+  obeyStopSigns: 0
+  totalStopSigns: 0
+  obeyTrafficLights: 0
+  totalTrafficLights: 0
+  timerText: {fileID: 0}
+  timerSecDuration: 600
+  gameCanvas: {fileID: 0}
+  endGameCanvas: {fileID: 0}
 --- !u!1 &405123854
 GameObject:
   m_ObjectHideFlags: 0
@@ -1266,6 +1274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   helicopterPrefab: {fileID: 100006, guid: ebfa405660e25c549bb7039f0b44f8ff, type: 3}
+  interceptorPrefab: {fileID: 115512, guid: 7be733fca5977484eab72a8eca73b1b2, type: 3}
 --- !u!4 &794760074
 Transform:
   m_ObjectHideFlags: 0
