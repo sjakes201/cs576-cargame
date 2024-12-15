@@ -9,7 +9,8 @@ public enum TileType
     ThreeWayStop,
     ThreeWaySignal,
     Curved,
-    Straight
+    Straight,
+    DeadEnd
 }
 
 public class DynamicTileMapGenerator : MonoBehaviour
@@ -21,6 +22,7 @@ public class DynamicTileMapGenerator : MonoBehaviour
     public GameObject threeWaySignalTile;
     public GameObject curvedTile;
     public GameObject straightTile;
+    public GameObject deadEndTile;
 
     [Header("Map Settings")]
     public int maxTiles = 100; // Maximum number of tiles to place
@@ -100,6 +102,8 @@ public class DynamicTileMapGenerator : MonoBehaviour
         }
 
         Debug.Log($"Map generation complete with {tilesPlaced} tiles.");
+
+        FillGapsWithDeadEnds();
     }
 
     void InstantiateTile(Tile tile, Vector2Int position)
@@ -129,6 +133,7 @@ public class DynamicTileMapGenerator : MonoBehaviour
             case TileType.ThreeWaySignal: return threeWaySignalTile;
             case TileType.Curved: return curvedTile;
             case TileType.Straight: return straightTile;
+            case TileType.DeadEnd: return deadEndTile;
             default:
                 Debug.LogWarning($"No prefab found for tile type {type}.");
                 return null;
@@ -247,6 +252,18 @@ bool AreConnectionsValid(Vector2Int position, Vector2Int[] connections)
             case TileType.Straight:
                 return new[] { Vector2Int.up, Vector2Int.down };
 
+
+
+
+
+
+        case TileType.DeadEnd:
+            return new[] { Vector2Int.down }; // Dead-end connects in one direction also probably source of error due to how connections work, final process should not rely on connections
+
+
+
+
+
             default:
                 return new Vector2Int[0];
         }
@@ -266,6 +283,78 @@ bool AreConnectionsValid(Vector2Int position, Vector2Int[] connections)
         }
         return rotatedConnections;
     }
+
+void FillGapsWithDeadEnds()
+{
+    List<Vector2Int> directions = new List<Vector2Int>
+    {
+        Vector2Int.up,
+        Vector2Int.down,
+        Vector2Int.left,
+        Vector2Int.right
+    };
+
+    HashSet<Vector2Int> processedPositions = new HashSet<Vector2Int>();
+    Dictionary<Vector2Int, Tile> newDeadEndTiles = new Dictionary<Vector2Int, Tile>(); // Collect new tiles here
+
+    foreach (var kvp in placedTiles)
+    {
+        Vector2Int tilePosition = kvp.Key;
+
+        foreach (Vector2Int direction in directions)
+        {
+            Vector2Int neighborPosition = tilePosition + direction;
+
+            // Skip if the position already has a tile or is already processed
+            if (placedTiles.ContainsKey(neighborPosition) || processedPositions.Contains(neighborPosition))
+            {
+                Debug.Log("Skipped");
+                continue;
+            }
+            Debug.Log("Not Skipped");
+
+            // Determine rotation for the dead-end to face the current tile
+            int rotation = GetDeadEndRotation(-direction);
+
+            // Create the dead-end tile
+            Tile deadEndTile = new Tile
+            {
+                Type = TileType.DeadEnd,
+                Connections = RotateConnections(GetBaseConnections(TileType.DeadEnd), rotation),
+                Rotation = rotation
+            };
+
+            // Add the tile to the new tiles dictionary
+            newDeadEndTiles[neighborPosition] = deadEndTile;
+
+            // Mark this position as processed
+            processedPositions.Add(neighborPosition);
+
+            Debug.Log($"Prepared dead-end tile at {neighborPosition} facing {direction}.");
+        }
+    }
+
+    // Add all new dead-end tiles to the placedTiles dictionary
+    foreach (var kvp in newDeadEndTiles)
+    {
+        placedTiles[kvp.Key] = kvp.Value;
+        InstantiateTile(kvp.Value, kvp.Key);
+        Debug.Log($"Placed dead-end tile at {kvp.Key}.");
+    }
+
+    Debug.Log("All gaps around placed tiles filled with dead-end tiles.");
+}
+
+
+int GetDeadEndRotation(Vector2Int incomingDirection)
+{
+    if (incomingDirection == Vector2Int.up) return 2; // 180°
+    if (incomingDirection == Vector2Int.down) return 0; // Default
+    if (incomingDirection == Vector2Int.left) return 1; // 90°
+    if (incomingDirection == Vector2Int.right) return 3; // 270°
+    return 0;
+}
+
 
 void OnDrawGizmos()
 {

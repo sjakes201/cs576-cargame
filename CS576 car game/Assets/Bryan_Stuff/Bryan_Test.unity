@@ -493,7 +493,8 @@ MonoBehaviour:
   threeWaySignalTile: {fileID: 7795654872186516089, guid: f4386ad9047f5f0459a924a46917abba, type: 3}
   curvedTile: {fileID: 3600792593835844871, guid: ac6412d1037007448b2645187e4aeae7, type: 3}
   straightTile: {fileID: 5676491247255502099, guid: 020401b2272cbfe46926f989fb2a0b2e, type: 3}
-  maxTiles: 250
+  deadEndTile: {fileID: 2437447205517954677, guid: 969f1cb6c99cda8459d81e8134867daf, type: 3}
+  maxTiles: 150
 --- !u!4 &1200390373
 Transform:
   m_ObjectHideFlags: 0
