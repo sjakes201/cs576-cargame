@@ -92,6 +92,7 @@
     <Compile Include="Assets\Scripts\TrafficZones\StopLight.cs" />
     <Compile Include="Assets\Bryan_Stuff\Scripts\Oldv1_Straight_Path1.cs" />
     <Compile Include="Assets\Bryan_Stuff\Scripts\V3_working.cs" />
+    <Compile Include="Assets\Nick_Stuff\PoliceCarChaseTest.cs" />
     <Compile Include="Assets\Traffic Lights System\Scripts\TrafficLightPhase.cs" />
   </ItemGroup>
   <ItemGroup>
