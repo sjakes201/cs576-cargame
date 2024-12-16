@@ -26,20 +26,18 @@ public class TrafficLightController : MonoBehaviour
     {
         while (true) 
         {
-            // 红灯亮
-            Debug.Log("红灯亮");
-            SetLightState("Red");
-            yield return new WaitForSeconds(redDuration);
-
-            // 绿灯亮
-            Debug.Log("绿灯亮");
+            Debug.Log("Green light on");
             SetLightState("Green");
             yield return new WaitForSeconds(greenDuration);
 
-            // 黄灯亮
-            Debug.Log("黄灯亮");
+            Debug.Log("Yellow light on");
             SetLightState("Yellow");
             yield return new WaitForSeconds(yellowDuration);
+
+            Debug.Log("Red light on");
+            SetLightState("Red");
+            yield return new WaitForSeconds(redDuration);
+
         }
     }
 
