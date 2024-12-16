@@ -3,11 +3,31 @@
   "WorkspaceRootPath": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|c:\\users\\sjake\\desktop\\projects\\cs576-cargame\\cs576 car game\\assets\\scripts\\car\\camerafollowcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|c:\\users\\sjake\\desktop\\projects\\cs576-cargame\\cs576 car game\\assets\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|solutionrelative:assets\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|c:\\users\\sjake\\desktop\\projects\\cs576-cargame\\cs576 car game\\assets\\scripts\\trafficzones\\stopsignzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\trafficzones\\stopsignzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\assets\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|solutionrelative:assets\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\assets\\nick_stuff\\policecarchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|solutionrelative:assets\\nick_stuff\\policecarchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\assets\\bryan_stuff\\scripts\\map_randomized.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|solutionrelative:assets\\bryan_stuff\\scripts\\map_randomized.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\assets\\scripts\\car\\camerafollowcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\car\\camerafollowcar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|c:\\users\\sjake\\desktop\\projects\\cs576-cargame\\cs576 car game\\assets\\prometeo - car controller\\scripts\\prometeotouchinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\assets\\prometeo - car controller\\scripts\\prometeotouchinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14E3A5CC-1003-DD91-BF0A-D8FBB2BD7B1B}|Assembly-CSharp.csproj|solutionrelative:assets\\prometeo - car controller\\scripts\\prometeotouchinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -27,19 +47,80 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CameraFollowCar.cs",
-              "DocumentMoniker": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\Scripts\\Car\\CameraFollowCar.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Car\\CameraFollowCar.cs",
-              "ToolTip": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\Scripts\\Car\\CameraFollowCar.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Car\\CameraFollowCar.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "EnemySpawner.cs",
+              "DocumentMoniker": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\EnemySpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\EnemySpawner.cs",
+              "ToolTip": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\EnemySpawner.cs",
+              "RelativeToolTip": "Assets\\EnemySpawner.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T00:41:54.215Z",
+              "WhenOpened": "2024-12-16T18:32:10.232Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "StopSignZone.cs",
+              "DocumentMoniker": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\Scripts\\TrafficZones\\StopSignZone.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\TrafficZones\\StopSignZone.cs",
+              "ToolTip": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\Scripts\\TrafficZones\\StopSignZone.cs",
+              "RelativeToolTip": "Assets\\Scripts\\TrafficZones\\StopSignZone.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEcAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T17:41:16.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PauseMenu.cs",
+              "DocumentMoniker": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\PauseMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\PauseMenu.cs",
+              "ToolTip": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\PauseMenu.cs",
+              "RelativeToolTip": "Assets\\PauseMenu.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAgwEcAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T17:32:07.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Map_Randomized.cs",
+              "DocumentMoniker": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\Bryan_Stuff\\Scripts\\Map_Randomized.cs",
+              "RelativeDocumentMoniker": "Assets\\Bryan_Stuff\\Scripts\\Map_Randomized.cs",
+              "ToolTip": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\Bryan_Stuff\\Scripts\\Map_Randomized.cs",
+              "RelativeToolTip": "Assets\\Bryan_Stuff\\Scripts\\Map_Randomized.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T00:58:21.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PoliceCarChase.cs",
+              "DocumentMoniker": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\Nick_Stuff\\PoliceCarChase.cs",
+              "RelativeDocumentMoniker": "Assets\\Nick_Stuff\\PoliceCarChase.cs",
+              "ToolTip": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\Nick_Stuff\\PoliceCarChase.cs",
+              "RelativeToolTip": "Assets\\Nick_Stuff\\PoliceCarChase.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAkwDMAAABjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T00:57:52.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CameraFollowCar.cs",
+              "DocumentMoniker": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\Scripts\\Car\\CameraFollowCar.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Car\\CameraFollowCar.cs",
+              "ToolTip": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\Scripts\\Car\\CameraFollowCar.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Car\\CameraFollowCar.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-16T00:41:54.215Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "PrometeoTouchInput.cs",
               "DocumentMoniker": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoTouchInput.cs",
               "RelativeDocumentMoniker": "Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoTouchInput.cs",
@@ -47,12 +128,11 @@
               "RelativeToolTip": "Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoTouchInput.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T00:39:24.77Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-16T00:39:24.77Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "PrometeoCarController.cs",
               "DocumentMoniker": "C:\\Users\\sjake\\Desktop\\projects\\cs576-cargame\\CS576 car game\\Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoCarController.cs",
               "RelativeDocumentMoniker": "Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoCarController.cs",
@@ -60,8 +140,7 @@
               "RelativeToolTip": "Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoCarController.cs",
               "ViewState": "AQIAAF0AAAAAAAAAAAAgwHYAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T00:32:55.425Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-16T00:32:55.425Z"
             }
           ]
         }

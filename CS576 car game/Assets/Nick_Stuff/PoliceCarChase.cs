@@ -28,7 +28,7 @@ public class PoliceCarChase : MonoBehaviour
     private NavMeshAgent cop; // Reference to the police car's Nav Mesh Agent
     private AudioSource sirenAudio; // Reference to the police siren audio
 
-    //private ScoreManager scoreManager;
+    private ScoreManager scoreManager;
     void Start()
     {
         playerCar = GameObject.FindGameObjectWithTag("Car").GetComponent<Rigidbody>();
@@ -40,7 +40,7 @@ public class PoliceCarChase : MonoBehaviour
 
         sirenAudio = GetComponent<AudioSource>();
 
-        //scoreManager = FindObjectOfType<ScoreManager>();
+        scoreManager = FindObjectOfType<ScoreManager>();
     }
 
     void Update()
@@ -141,7 +141,7 @@ public class PoliceCarChase : MonoBehaviour
         {
             StopChasing();          
             Debug.Log("Cop has caught the player.");
-            //scoreManager.EndGame();
+            scoreManager.EndGame();
             return; // Stop further movement and chase
         }
 
