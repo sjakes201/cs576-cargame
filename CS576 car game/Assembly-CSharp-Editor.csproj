@@ -60,7 +60,10 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.44f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Bryan_Stuff\Editor\TileMaker.cs" />
     <Compile Include="Assets\Traffic Lights System\Editor\TrafficLightManagerEditor.cs" />
+    <Compile Include="Assets\Bryan_Stuff\Editor\Oldv1_TileBuilderEditor1.cs" />
+    <Compile Include="Assets\Bryan_Stuff\Editor\TileBuilderEditor.cs" />
     <Compile Include="Assets\PROMETEO - Car Controller\Editor\PrometeoEditor.cs" />
   </ItemGroup>
   <ItemGroup>

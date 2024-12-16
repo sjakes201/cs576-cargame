@@ -12,23 +12,28 @@ public class PrometeoTouchInput : MonoBehaviour
     Vector3 initialScale;
     float scaleDownMultiplier = 0.85f;
 
-    void Start(){
-      rectTransform = GetComponent<RectTransform>();
-      initialScale = rectTransform.localScale;
+    void Start()
+    {
+        rectTransform = GetComponent<RectTransform>();
+        initialScale = rectTransform.localScale;
     }
 
-    public void ButtonDown(){
-      buttonPressed = true;
-      if(changeScaleOnPressed){
-        rectTransform.localScale = initialScale * scaleDownMultiplier;
-      }
+    public void ButtonDown()
+    {
+        buttonPressed = true;
+        if (changeScaleOnPressed)
+        {
+            rectTransform.localScale = initialScale * scaleDownMultiplier;
+        }
     }
 
-    public void ButtonUp(){
-      buttonPressed = false;
-      if(changeScaleOnPressed){
-        rectTransform.localScale = initialScale;
-      }
+    public void ButtonUp()
+    {
+        buttonPressed = false;
+        if (changeScaleOnPressed)
+        {
+            rectTransform.localScale = initialScale;
+        }
     }
 
 }

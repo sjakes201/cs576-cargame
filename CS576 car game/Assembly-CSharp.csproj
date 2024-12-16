@@ -70,12 +70,17 @@
     <Compile Include="Assets\PROMETEO - Car Controller\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Scripts\Score&amp;Speed\ScoreManager.cs" />
     <Compile Include="Assets\Traffic Lights System\Scripts\TrafficLightManager.cs" />
+    <Compile Include="Assets\Bryan_Stuff\Scripts\Map_Randomized.cs" />
     <Compile Include="Assets\Scripts\AI\PedestrainAI.cs" />
     <Compile Include="Assets\Scripts\TrafficZones\StopSignZone.cs" />
     <Compile Include="Assets\Scripts\MainMenu\MainMenuLogic.cs" />
     <Compile Include="Assets\Scripts\Scoresheet\ScoreSheetManager.cs" />
+    <Compile Include="Assets\Nick_Stuff\speedMonitor.cs" />
+    <Compile Include="Assets\Bryan_Stuff\Scripts\V2_WorkingMap.cs" />
+    <Compile Include="Assets\Nick_Stuff\stop.cs" />
     <Compile Include="Assets\Supercyan Character Pack Animal People Sample\Scripts\AccessoryLogic.cs" />
     <Compile Include="Assets\Traffic Lights System\Demo\Scripts\TL_Demo.cs" />
+    <Compile Include="Assets\Bryan_Stuff\Scripts\SemiWorking_Map_v1.cs" />
     <Compile Include="Assets\Test.cs" />
     <Compile Include="Assets\EnemySpawner.cs" />
     <Compile Include="Assets\Scripts\Car\CameraFollowCar.cs" />
@@ -92,6 +97,8 @@
     <Compile Include="Assets\Scripts\Score&amp;Speed\speedTracker.cs" />
     <Compile Include="Assets\Scripts\TrafficZones\StopLight.cs" />
     <Compile Include="Assets\PROMETEO - Car Controller\Scripts\PrometeoCarController.cs" />
+    <Compile Include="Assets\Bryan_Stuff\Scripts\Oldv1_Straight_Path1.cs" />
+    <Compile Include="Assets\Bryan_Stuff\Scripts\V3_working.cs" />
     <Compile Include="Assets\Traffic Lights System\Scripts\TrafficLightPhase.cs" />
   </ItemGroup>
   <ItemGroup>
