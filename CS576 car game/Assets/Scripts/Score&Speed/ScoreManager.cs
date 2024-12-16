@@ -7,7 +7,7 @@ using static UnityEngine.Rendering.VirtualTexturing.Debugging;
 public class ScoreManager : MonoBehaviour
 {
     public TextMeshProUGUI scoreText; // References the Score text element
-    private int score = 0; // initial score
+    public int score = 0; // initial score
     public int obeyStopSigns = 0;
     public int totalStopSigns = 0;
     public int obeyTrafficLights = 0;

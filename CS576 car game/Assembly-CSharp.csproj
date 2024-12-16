@@ -62,7 +62,6 @@
   <ItemGroup>
     <Compile Include="Assets\PROMETEO - Car Controller\Scripts\PrometeoTouchInput.cs" />
     <Compile Include="Assets\Scripts\TrafficZones\StopLightZone.cs" />
-    <Compile Include="Assets\Scripts\Scoresheet\ScoreManager.cs" />
     <Compile Include="Assets\DenysAlmaral\CityPeople-FREE\Demo_Scenes\Scripts\DemoCamera.cs" />
     <Compile Include="Assets\Scripts\TrafficZones\SpeedLimitZone.cs" />
     <Compile Include="Assets\Traffic Lights System\Scripts\RealTrafficLight.cs" />
@@ -74,6 +73,7 @@
     <Compile Include="Assets\Scripts\AI\PedestrainAI.cs" />
     <Compile Include="Assets\Scripts\TrafficZones\StopSignZone.cs" />
     <Compile Include="Assets\Scripts\MainMenu\MainMenuLogic.cs" />
+    <Compile Include="Assets\Scripts\Scoresheet\ScoreSheetManager.cs" />
     <Compile Include="Assets\Supercyan Character Pack Animal People Sample\Scripts\AccessoryLogic.cs" />
     <Compile Include="Assets\Traffic Lights System\Demo\Scripts\TL_Demo.cs" />
     <Compile Include="Assets\Test.cs" />

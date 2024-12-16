@@ -437,6 +437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1416896788}
+  score: 0
   obeyStopSigns: 0
   totalStopSigns: 0
   obeyTrafficLights: 0
@@ -1159,7 +1160,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &769976242
 MonoBehaviour:
   m_ObjectHideFlags: 0
