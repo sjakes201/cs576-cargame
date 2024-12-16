@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class ScoreDisplay : MonoBehaviour
 {
@@ -48,6 +49,9 @@ public class ScoreDisplay : MonoBehaviour
     {
         yield return new WaitForSeconds(2.0f);
         StartCoroutine(ShowScores());
+        yield return new WaitForSeconds(15.0f);
+        SceneManager.LoadScene("MainMenu");
+
     }
 
     private string GetScore(string key)
