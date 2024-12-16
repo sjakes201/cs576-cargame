@@ -31,6 +31,7 @@ public class DynamicTileMapGenerator : MonoBehaviour
     private Dictionary<Vector2Int, Tile> placedTiles = new Dictionary<Vector2Int, Tile>();
     private List<Vector2Int> invalidPositions = new List<Vector2Int>();
     private Queue<(Vector2Int position, Vector2Int direction)> openConnections = new Queue<(Vector2Int, Vector2Int)>();
+    private List<Vector3> spawnablePositions = new List<Vector3>();
 
     public NavMeshSurface navMeshSurface;
 
@@ -44,6 +45,7 @@ public class DynamicTileMapGenerator : MonoBehaviour
         placedTiles.Clear();
         invalidPositions.Clear();
         openConnections.Clear();
+        spawnablePositions.Clear();
 
         // Initialize start tile
         Vector2Int startPosition = Vector2Int.zero;
@@ -107,8 +109,28 @@ public class DynamicTileMapGenerator : MonoBehaviour
         Debug.Log($"Map generation complete with {tilesPlaced} tiles.");
 
         FillGapsWithDeadEnds();
-
+        CollectSpawnablePositions();
         BakeNavMesh();
+    }
+
+    void CollectSpawnablePositions()
+    {
+        foreach (var kvp in placedTiles)
+        {
+            if (kvp.Value.Type != TileType.DeadEnd) // Exclude dead-end tiles
+            {
+                Vector3 worldPosition = new Vector3(kvp.Key.x * 50, 5, kvp.Key.y * 50);  // The 5 ensures that the car spawns above the tile.
+                spawnablePositions.Add(worldPosition);
+            }
+        }
+
+        Debug.Log($"Collected {spawnablePositions.Count} spawnable positions.");
+    }
+
+    // Function for spawner to be able to fetch spawnablePositions
+    public List<Vector3> GetSpawnablePositions()
+    {
+        return spawnablePositions;
     }
 
     void BakeNavMesh()

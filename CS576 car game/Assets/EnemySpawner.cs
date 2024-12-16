@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class HelicopterSpawner : MonoBehaviour
 {
@@ -7,10 +8,24 @@ public class HelicopterSpawner : MonoBehaviour
 
     private float interceptorSpawnTimer = 0f;
     private float helicopterSpawnTimer = 0f;
+    private List<Vector3> spawnablePositions;
+
+
+
 
     void Start()
     {
-        SpawnInterceptor(new Vector3(0, 5, 0));
+
+        var mapGenerator = FindObjectOfType<DynamicTileMapGenerator>();
+        if (mapGenerator == null)
+        {
+            Debug.LogError("DynamicTileMapGenerator not found!");
+            return;
+        }
+
+        spawnablePositions = mapGenerator.GetSpawnablePositions();
+
+        SpawnInterceptor(new Vector3(0, 5, 0)); // Always start on base tile
         SpawnHelicopter(new Vector3(0, 50, 0));
     }
 
@@ -19,9 +34,10 @@ public class HelicopterSpawner : MonoBehaviour
         interceptorSpawnTimer += Time.deltaTime;
         helicopterSpawnTimer += Time.deltaTime;
 
-        if (interceptorSpawnTimer >= 60f)
+        if (interceptorSpawnTimer >= 5f)
         {
-            SpawnInterceptor(new Vector3(0, 0, 0));
+            SpawnInterceptor(spawnablePositions[Random.Range(0, spawnablePositions.Count)]);
+
             interceptorSpawnTimer = 0f;
         }
 
