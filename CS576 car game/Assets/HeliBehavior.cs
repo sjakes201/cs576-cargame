@@ -20,6 +20,7 @@ public class HelicopterFollow : MonoBehaviour
     private float fixedY; // Fixed Y-coordinate to lock movement height
 
     public bool CanSeePlayerPublic { get; private set; } // Public canSeePlayer for the police car
+    private AudioSource heliAudio; // Reference to the helicopter audio
 
     void Start()
     {
@@ -41,6 +42,8 @@ public class HelicopterFollow : MonoBehaviour
         SetRandomWanderTarget();
         previousPosition = transform.position;
         currentFollowSpeed = followSpeed;
+
+        heliAudio = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -58,18 +61,36 @@ public class HelicopterFollow : MonoBehaviour
             currentFollowSpeed = followSpeed * 1.25f;
             timeSinceLastSeen = 0f;
             lastKnownPosition = player.position; // Store player's position
+
+            // Play heli audio while helicopter can see player
+            if (heliAudio != null && !heliAudio.isPlaying)
+            {
+                heliAudio.Play();
+            }
         }
         else if (hasSeenPlayer && timeSinceLastSeen < lostPlayerTimeout) // Only move to lastKnown if player has been seen
         {
             ContinueInLastKnownDirection();
             TiltDownSmoothly();
             timeSinceLastSeen += Time.deltaTime;
+
+            // Play heli audio while helicopter is still looking for player
+            if (heliAudio != null && !heliAudio.isPlaying)
+            {
+                heliAudio.Play();
+            }
         }
         else
         {
             WanderAround();
             ResetTiltSmoothly();
             currentFollowSpeed = followSpeed;
+
+            // Stop the heli audio when the helicopter is no longer looking for player
+            if (heliAudio != null && heliAudio.isPlaying)
+            {
+                heliAudio.Stop();
+            }
         }
 
         RotateTowardsMovement();

@@ -26,6 +26,7 @@ public class PoliceCarChase : MonoBehaviour
     public HelicopterFollow helicopter; // Reference to the helicopter
 
     private NavMeshAgent cop; // Reference to the police car's Nav Mesh Agent
+    private AudioSource sirenAudio; // Reference to the police siren audio
 
     //private ScoreManager scoreManager;
     void Start()
@@ -36,6 +37,8 @@ public class PoliceCarChase : MonoBehaviour
 
         cop = GetComponent<NavMeshAgent>();
         cop.speed = 0;
+
+        sirenAudio = GetComponent<AudioSource>();
 
         //scoreManager = FindObjectOfType<ScoreManager>();
     }
@@ -91,6 +94,12 @@ public class PoliceCarChase : MonoBehaviour
     {
         isChasing = true;
         Debug.Log("Cop starts chasing the player!");
+
+        // Start playing the siren audio if it's not already playing
+        if (sirenAudio != null && !sirenAudio.isPlaying)
+        {
+            sirenAudio.Play();
+        }
     }
 
     // Stop chasing the player
@@ -98,6 +107,12 @@ public class PoliceCarChase : MonoBehaviour
     {
         isChasing = false;
         Debug.Log("Cop stopped chasing the player.");
+
+        // Stop the siren audio
+        if (sirenAudio != null && sirenAudio.isPlaying)
+        {
+            sirenAudio.Stop();
+        }
     }
 
     // Move the police car towards the player
