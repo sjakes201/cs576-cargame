@@ -67,11 +67,13 @@
     <Compile Include="Assets\Traffic Lights System\Scripts\RealTrafficLight.cs" />
     <Compile Include="Assets\Traffic Lights System\Scripts\TrafficLightBase.cs" />
     <Compile Include="Assets\Scripts\AI\TrafficAI.cs" />
+    <Compile Include="Assets\Scripts\Traffic Rule\StopDetection.cs" />
     <Compile Include="Assets\PROMETEO - Car Controller\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\Score&amp;Speed\ScoreManager.cs" />
     <Compile Include="Assets\Traffic Lights System\Scripts\TrafficLightManager.cs" />
     <Compile Include="Assets\Bryan_Stuff\Scripts\Map_Randomized.cs" />
+    <Compile Include="Assets\Scripts\CrashDetection.cs" />
     <Compile Include="Assets\Scripts\AI\PedestrainAI.cs" />
     <Compile Include="Assets\Scripts\TrafficZones\StopSignZone.cs" />
     <Compile Include="Assets\Scripts\MainMenu\MainMenuLogic.cs" />
@@ -83,6 +85,7 @@
     <Compile Include="Assets\Traffic Lights System\Demo\Scripts\TL_Demo.cs" />
     <Compile Include="Assets\Bryan_Stuff\Scripts\SemiWorking_Map_v1.cs" />
     <Compile Include="Assets\Test.cs" />
+    <Compile Include="Assets\Traffic Lights System\Scripts\TrafficLightDetectionZone.cs" />
     <Compile Include="Assets\EnemySpawner.cs" />
     <Compile Include="Assets\Scripts\Car\CameraFollowCar.cs" />
     <Compile Include="Assets\Supercyan Character Pack Animal People Sample\Scripts\FreeCameraLogic.cs" />
@@ -92,7 +95,9 @@
     <Compile Include="Assets\HeliBehavior.cs" />
     <Compile Include="Assets\Scripts\AI\AISpawnManager.cs" />
     <Compile Include="Assets\Supercyan Character Pack Animal People Sample\Scripts\AccessoryWearLogic.cs" />
+    <Compile Include="Assets\Scripts\FinishDetectionZone.cs" />
     <Compile Include="Assets\Supercyan Character Pack Animal People Sample\Scripts\DemoFree.cs" />
+    <Compile Include="Assets\Traffic Lights System\Scripts\TrafficLightController.cs" />
     <Compile Include="Assets\Nick_Stuff\PoliceCarChase.cs" />
     <Compile Include="Assets\DenysAlmaral\CityPeople-FREE\Scripts\CityPeople.cs" />
     <Compile Include="Assets\Scripts\Score&amp;Speed\speedTracker.cs" />
