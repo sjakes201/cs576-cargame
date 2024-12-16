@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Unity.AI.Navigation;
 using UnityEngine;
 
 public enum TileType
@@ -30,6 +31,8 @@ public class DynamicTileMapGenerator : MonoBehaviour
     private Dictionary<Vector2Int, Tile> placedTiles = new Dictionary<Vector2Int, Tile>();
     private List<Vector2Int> invalidPositions = new List<Vector2Int>();
     private Queue<(Vector2Int position, Vector2Int direction)> openConnections = new Queue<(Vector2Int, Vector2Int)>();
+
+    public NavMeshSurface navMeshSurface;
 
     void Start()
     {
@@ -104,6 +107,25 @@ public class DynamicTileMapGenerator : MonoBehaviour
         Debug.Log($"Map generation complete with {tilesPlaced} tiles.");
 
         FillGapsWithDeadEnds();
+
+        BakeNavMesh();
+    }
+
+    void BakeNavMesh()
+    {
+        if (navMeshSurface == null)
+        {
+            Debug.LogError("No NavMeshSurface found");
+            return;
+        }
+
+        // Exclude the IgnoreNavMesh layer from NavMesh baking
+        // Assign stop sign and stop light zones the "IgnoreNavMesh" layer
+        navMeshSurface.layerMask = ~LayerMask.GetMask("IgnoreNavMesh");
+
+        // Clear and rebuild the NavMesh surface
+        navMeshSurface.BuildNavMesh();
+        Debug.Log("NavMesh baked successfully!");
     }
 
     void InstantiateTile(Tile tile, Vector2Int position)

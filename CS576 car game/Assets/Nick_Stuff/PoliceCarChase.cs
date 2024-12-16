@@ -27,7 +27,7 @@ public class PoliceCarChase : MonoBehaviour
 
     private NavMeshAgent cop; // Reference to the police car's Nav Mesh Agent
 
-    private ScoreManager scoreManager;
+    //private ScoreManager scoreManager;
     void Start()
     {
         playerCar = GameObject.FindGameObjectWithTag("Car").GetComponent<Rigidbody>();
@@ -37,7 +37,7 @@ public class PoliceCarChase : MonoBehaviour
         cop = GetComponent<NavMeshAgent>();
         cop.speed = 0;
 
-        scoreManager = FindObjectOfType<ScoreManager>();
+        //scoreManager = FindObjectOfType<ScoreManager>();
     }
 
     void Update()
@@ -52,6 +52,23 @@ public class PoliceCarChase : MonoBehaviour
         }
 
         if(!isChasing && helicopterCanSeePlayer) StartChasing();
+
+        // If chasing cop will move towards the player
+        if (isChasing)
+        {
+            // If the player is too far, then stop chasing
+            if (!helicopterCanSeePlayer && Vector3.Distance(transform.position, player.position) > stopChaseDist)
+            {
+                StopChasing();
+                Debug.Log("Cop stopped chasing: Player is too far away.");
+                return;
+            }
+
+            // Otherwise, continue chasing
+            ChasePlayer(playerSpeed);
+        }
+
+        if (!isChasing && helicopterCanSeePlayer) StartChasing();
 
         // If chasing cop will move towards the player
         if (isChasing)
@@ -109,7 +126,7 @@ public class PoliceCarChase : MonoBehaviour
         {
             StopChasing();          
             Debug.Log("Cop has caught the player.");
-            scoreManager.EndGame();
+            //scoreManager.EndGame();
             return; // Stop further movement and chase
         }
 
