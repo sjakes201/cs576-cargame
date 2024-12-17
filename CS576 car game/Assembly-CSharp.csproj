@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\CrashDetection.cs" />
     <Compile Include="Assets\Scripts\AI\PedestrainAI.cs" />
     <Compile Include="Assets\Scripts\TrafficZones\StopSignZone.cs" />
+    <Compile Include="Assets\SceneSwitcher.cs" />
     <Compile Include="Assets\HeliSpawner.cs" />
     <Compile Include="Assets\Scripts\MainMenu\MainMenuLogic.cs" />
     <Compile Include="Assets\Supercyan Character Pack Animal People Sample\Scripts\AccessoryLogic.cs" />
