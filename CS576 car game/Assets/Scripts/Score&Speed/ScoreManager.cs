@@ -15,7 +15,7 @@ public class ScoreManager : MonoBehaviour
 
     // Timer related variables
     public TextMeshProUGUI timerText; // Reference to the Timer text element
-    public int timerSecDuration = 600; // Total timer duration in seconds
+    public int timerSecDuration = 480; // Total timer duration in seconds
     public Canvas gameCanvas; // Canvas to disable when the timer runs out
     public Canvas endGameCanvas; // Canvas to enable when the timer runs out
 

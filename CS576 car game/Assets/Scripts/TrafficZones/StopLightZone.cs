@@ -14,14 +14,6 @@ public class StopLightZone : MonoBehaviour
     {
         if (other.CompareTag("Car"))
         {
-            Debug.Log("Car entered the stoplight zone.");
-        }
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Car"))
-        {
             if (stopLight.GetCurrentLightColor() == StopLight.LightColor.Red)
             {
                 Debug.Log("Car left the zone during red light! Failed to stop!");
@@ -34,6 +26,7 @@ public class StopLightZone : MonoBehaviour
             }
         }
     }
+
 
     public void OnBreakRules()
     {

@@ -10,8 +10,21 @@ public class StopLight : MonoBehaviour
 
     void Start()
     {
+        System.Random random = new System.Random();
+        int rand = random.Next(1, 3);
         lightRenderer = GetComponent<Renderer>();
-        SetLightColor(LightColor.Green);
+        if (rand == 1)
+        {
+            SetLightColor(LightColor.Green);
+        }
+        else if (rand == 2)
+        {
+            SetLightColor(LightColor.Yellow);
+        }
+        else if (rand == 3)
+        {
+            SetLightColor(LightColor.Red);
+        }
     }
 
     void Update()

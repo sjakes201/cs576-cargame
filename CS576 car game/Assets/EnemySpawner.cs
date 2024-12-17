@@ -25,8 +25,8 @@ public class HelicopterSpawner : MonoBehaviour
 
         spawnablePositions = mapGenerator.GetSpawnablePositions();
 
-        SpawnInterceptor(new Vector3(0, 5, 0)); // Always start on base tile
-        SpawnHelicopter(new Vector3(0, 50, 0));
+        SpawnInterceptor(new Vector3(50, 5, 0)); // Always start on base tile
+        SpawnHelicopter(new Vector3(50, 50, 50));
     }
 
     void Update()
@@ -34,14 +34,14 @@ public class HelicopterSpawner : MonoBehaviour
         interceptorSpawnTimer += Time.deltaTime;
         helicopterSpawnTimer += Time.deltaTime;
 
-        if (interceptorSpawnTimer >= 90f)
+        if (interceptorSpawnTimer >= 20f)
         {
             SpawnInterceptor(spawnablePositions[Random.Range(0, spawnablePositions.Count)]);
 
             interceptorSpawnTimer = 0f;
         }
 
-        if (helicopterSpawnTimer >= 120f)
+        if (helicopterSpawnTimer >= 10f)
         {
             SpawnHelicopter(new Vector3(0, 50, 0));
             helicopterSpawnTimer = 0f;

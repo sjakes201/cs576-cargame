@@ -8,7 +8,6 @@ public class ScoreDisplay : MonoBehaviour
 {
     public TextMeshProUGUI stopSignText;
     public TextMeshProUGUI stopLightText;
-    public TextMeshProUGUI speedLimitText;
     public TextMeshProUGUI totalPrefix;
     public TextMeshProUGUI totalScore;
 
@@ -36,11 +35,9 @@ public class ScoreDisplay : MonoBehaviour
         {
             { "stopsign", stopSignText },
             { "stoplight", stopLightText },
-            { "speedlimit", speedLimitText }
         };
         stopSignText.gameObject.SetActive(false);
         stopLightText.gameObject.SetActive(false);
-        speedLimitText.gameObject.SetActive(false);
         totalPrefix.gameObject.SetActive(false);
         totalScore.gameObject.SetActive(false);
     }
@@ -50,7 +47,7 @@ public class ScoreDisplay : MonoBehaviour
         yield return new WaitForSeconds(2.0f);
         StartCoroutine(ShowScores());
         yield return new WaitForSeconds(15.0f);
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("MainMenuNew");
 
     }
 
@@ -64,8 +61,6 @@ public class ScoreDisplay : MonoBehaviour
                 return $"{scoreManager.obeyStopSigns}/{scoreManager.totalStopSigns}";
             case "stoplight":
                 return $"{scoreManager.obeyTrafficLights}/{scoreManager.totalTrafficLights}";
-            case "speedlimit":
-                return "N/A"; // Placeholder for speed limit
             default:
                 return "0/0";
         }
@@ -75,7 +70,7 @@ public class ScoreDisplay : MonoBehaviour
     {
         int score = scoreManager.score;
         // do math for thresholds
-        return "B+";
+        return score.ToString();
     }
 
     private IEnumerator ShowScores()
@@ -91,19 +86,6 @@ public class ScoreDisplay : MonoBehaviour
 
         yield return StartCoroutine(ShowTotalPrefix("FINAL GRADE: "));
         totalScore.text = GetGrade();
-        if (totalScore.text == "A+")
-        {
-            totalScore.fontStyle = FontStyles.Bold;
-            totalScore.color = new Color(1f, 0.84f, 0f, 1f);
-        }
-        else if (totalScore.text == "A" || totalScore.text == "A-" || totalScore.text == "B+")
-        {
-            totalScore.color = new Color(0.1f, 0.5f, 0.1f, 1f);
-        }
-        else if (totalScore.text == "D" || totalScore.text == "F")
-        {
-            totalScore.color = Color.red;
-        }
 
         yield return new WaitForSeconds(1.0f);
         yield return StartCoroutine(AnimateFontSize(totalScore, 2.0f, 1.5f));
