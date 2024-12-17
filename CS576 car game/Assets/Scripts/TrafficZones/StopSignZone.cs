@@ -33,7 +33,7 @@ public class StopSignZone : MonoBehaviour
             if (carController != null)
             {
                 carSpeed = Mathf.Abs(carController.carSpeed);
-                if (carSpeed <= 0.01f)
+                if (carSpeed <= 1f)
                 {
                     hasStopped = true;
                     Debug.Log("Car has stopped in the zone.");

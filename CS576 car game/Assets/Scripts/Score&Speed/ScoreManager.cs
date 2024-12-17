@@ -57,8 +57,8 @@ public class ScoreManager : MonoBehaviour
 
     public void AddPoints(int points, int type)
     {
-      
-        score += Mathf.Max(points, score);
+
+        score += points;
         UpdateScoreText();
 
         // type 0 is stop signs

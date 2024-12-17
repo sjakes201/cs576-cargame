@@ -37,6 +37,6 @@ public class StopLightZone : MonoBehaviour
 
     public void OnObeyRules()
     {
-        scoreManager.AddPoints(5, 1);
+        scoreManager.AddPoints(3, 1);
     }
 }
