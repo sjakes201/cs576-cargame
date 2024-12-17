@@ -405,7 +405,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   warningCubePrefab: {fileID: 4885935560842538584, guid: 8467bddfff83f3b4a8e12a19528f5988, type: 3}
-  cubeOffset: {x: 0, y: 1.5, z: 20}
+  cubeOffset: {x: 0, y: 1.5, z: 5}
   displayDuration: 3
 --- !u!1001 &27268844
 PrefabInstance:
@@ -1369,7 +1369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   warningCubePrefab: {fileID: 4885935560842538584, guid: 8467bddfff83f3b4a8e12a19528f5988, type: 3}
-  cubeOffset: {x: 0, y: 1.5, z: 20}
+  cubeOffset: {x: 0, y: 1.5, z: 5}
   displayDuration: 3
 --- !u!1001 &106540954
 PrefabInstance:
@@ -3245,7 +3245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   warningCubePrefab: {fileID: 4885935560842538584, guid: 8467bddfff83f3b4a8e12a19528f5988, type: 3}
-  cubeOffset: {x: 0, y: 1.5, z: 10}
+  cubeOffset: {x: 0, y: 1.5, z: 5}
   displayDuration: 3
 --- !u!1001 &439568309
 PrefabInstance:
@@ -3685,22 +3685,6 @@ PrefabInstance:
     - target: {fileID: 439664, guid: 856747ac5e7d8ae419bebaab7dec1ee7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 12202156, guid: 856747ac5e7d8ae419bebaab7dec1ee7, type: 3}
-      propertyPath: m_Color.rgba
-      value: 4281874488
-      objectReference: {fileID: 0}
-    - target: {fileID: 12230866, guid: 856747ac5e7d8ae419bebaab7dec1ee7, type: 3}
-      propertyPath: m_Color.rgba
-      value: 4281874488
-      objectReference: {fileID: 0}
-    - target: {fileID: 12268782, guid: 856747ac5e7d8ae419bebaab7dec1ee7, type: 3}
-      propertyPath: m_Color.rgba
-      value: 4281874488
-      objectReference: {fileID: 0}
-    - target: {fileID: 12283358, guid: 856747ac5e7d8ae419bebaab7dec1ee7, type: 3}
-      propertyPath: m_Color.rgba
-      value: 4281874488
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5204,7 +5188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   warningCubePrefab: {fileID: 4885935560842538584, guid: 8467bddfff83f3b4a8e12a19528f5988, type: 3}
-  cubeOffset: {x: 0, y: 1.5, z: 20}
+  cubeOffset: {x: 0, y: 1.5, z: 5}
   displayDuration: 3
 --- !u!4 &771101662 stripped
 Transform:
@@ -8406,7 +8390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0947fbdf6865c142a5be83614739410, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetSceneName: MainMenuNew
+  targetSceneName: RigidAfter
   player: {fileID: 1201839507}
 --- !u!1001 &1219846637
 PrefabInstance:
@@ -8633,22 +8617,6 @@ PrefabInstance:
     - target: {fileID: 439664, guid: 856747ac5e7d8ae419bebaab7dec1ee7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 12202156, guid: 856747ac5e7d8ae419bebaab7dec1ee7, type: 3}
-      propertyPath: m_Color.rgba
-      value: 4280295456
-      objectReference: {fileID: 0}
-    - target: {fileID: 12220620, guid: 856747ac5e7d8ae419bebaab7dec1ee7, type: 3}
-      propertyPath: m_Color.rgba
-      value: 4281874488
-      objectReference: {fileID: 0}
-    - target: {fileID: 12226532, guid: 856747ac5e7d8ae419bebaab7dec1ee7, type: 3}
-      propertyPath: m_Color.rgba
-      value: 4281874488
-      objectReference: {fileID: 0}
-    - target: {fileID: 12268782, guid: 856747ac5e7d8ae419bebaab7dec1ee7, type: 3}
-      propertyPath: m_Color.rgba
-      value: 4281874488
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10095,7 +10063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   warningCubePrefab: {fileID: 4885935560842538584, guid: 8467bddfff83f3b4a8e12a19528f5988, type: 3}
-  cubeOffset: {x: 0, y: 1.5, z: 20}
+  cubeOffset: {x: 0, y: 1.5, z: 5}
   displayDuration: 3
 --- !u!1001 &1419937785
 PrefabInstance:
@@ -10814,7 +10782,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   warningCubePrefab: {fileID: 4885935560842538584, guid: 8467bddfff83f3b4a8e12a19528f5988, type: 3}
-  cubeOffset: {x: 0, y: 1.5, z: 20}
+  cubeOffset: {x: 0, y: 1.5, z: 5}
   displayDuration: 3
 --- !u!1 &1483181125
 GameObject:
@@ -12381,7 +12349,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 12230866, guid: 856747ac5e7d8ae419bebaab7dec1ee7, type: 3}
       propertyPath: m_Color.rgba
-      value: 4281004334
+      value: 4281874488
       objectReference: {fileID: 0}
     - target: {fileID: 12268782, guid: 856747ac5e7d8ae419bebaab7dec1ee7, type: 3}
       propertyPath: m_Color.rgba
@@ -12389,7 +12357,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 12283358, guid: 856747ac5e7d8ae419bebaab7dec1ee7, type: 3}
       propertyPath: m_Color.rgba
-      value: 4278711335
+      value: 4281874488
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -10,8 +10,23 @@ EditorBuildSettings:
     guid: 70b42fef8f9c8dc498f45dd2a9a0104d
   - enabled: 1
     path: Assets/Scenes/GameScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    guid: 8ec87bfa485092043a00e86cf7f67728
   - enabled: 1
     path: Assets/Scenes/Game/RigidMapNew.unity
     guid: 78275f0eac0e7ed4b97cb52cffd11e2f
+  - enabled: 1
+    path: Assets/Scenes/MainMenuNew.unity
+    guid: f9b3940501628a3489c23f517d9712fc
+  - enabled: 1
+    path: Assets/Scenes/RIgidDescirption.unity
+    guid: 16c499724e0855949955ef78250760a9
+  - enabled: 1
+    path: Assets/Scenes/RigidAfter.unity
+    guid: 7450d6129f4a3b84387611fde90c9166
+  - enabled: 1
+    path: Assets/Scenes/DynamicDescirption.unity
+    guid: a0ab0a05def536e4db25b1933ab855ae
+  - enabled: 1
+    path: Assets/Bryan_Stuff/Bryan_Test.unity
+    guid: 0fb013f0044a65f45b0c4a633d920aad
   m_configObjects: {}
