@@ -9,13 +9,11 @@ public class PoliceCarChase : MonoBehaviour
 {
     public Transform player; // Reference to the player's position
     public float maxSpeed = 50f; // Max speed for the police car
-    // public float speeding = 20f; // Cop will begin chasing once the player passes this speed
     public float detectionRadius = 50f; // Radius within which the police car starts chasing the player
     public float stopChaseDist = 50f; // Cop will stop chasing if the player gets this far away
     private bool isChasing = false; // Flag to track if the cop is currently chasing
     public float minDistFromPlayer = 5f; // The minimum distance the cop can get to the player, to avoid weird collisions
     private Rigidbody playerCar; // Reference to the player's Rigidbody
-    //private float currSpeed = 0f; // Current speed of the police car
     private float chaseTime = 0f; // Time the police car has been chasing
     public float chaseTimeLimit = 7.5f; // Police car gets fatigued after this time limit
 
@@ -31,7 +29,13 @@ public class PoliceCarChase : MonoBehaviour
     private ScoreManager scoreManager;
     void Start()
     {
-        playerCar = GameObject.FindGameObjectWithTag("Car").GetComponent<Rigidbody>();
+        GameObject playerObject = GameObject.FindGameObjectWithTag("Car");
+        if (playerObject != null)
+        {
+            playerCar = playerObject.GetComponent<Rigidbody>();
+            player = playerObject.transform;
+        }
+
         GameObject helicopterObject = GameObject.FindGameObjectWithTag("Helicopter");
         if (helicopterObject != null) helicopter = helicopterObject.GetComponent<HelicopterFollow>();
 
@@ -150,14 +154,6 @@ public class PoliceCarChase : MonoBehaviour
 
         // Determines target position and speed
         float targetSpeed = Mathf.Min(playerSpeed + 1f, maxSpeed);
-
-        // Commented out another method of setting speed of police car
-        // Not sure which method is better, so leaving this here
-
-        //// If fatigued, reduce speed
-        //if (isFatigued) cop.speed = maxSpeed * Random.Range(0.5f, 0.8f);
-
-        //else cop.speed = Mathf.Min(playerSpeed + 1f, maxSpeed);
 
         // Apply random fatigue factor
         if (isFatigued) targetSpeed *= Random.Range(0.5f, 0.8f);

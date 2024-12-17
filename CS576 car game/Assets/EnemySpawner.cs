@@ -34,7 +34,7 @@ public class HelicopterSpawner : MonoBehaviour
         interceptorSpawnTimer += Time.deltaTime;
         helicopterSpawnTimer += Time.deltaTime;
 
-        if (interceptorSpawnTimer >= 5f)
+        if (interceptorSpawnTimer >= 90f)
         {
             SpawnInterceptor(spawnablePositions[Random.Range(0, spawnablePositions.Count)]);
 
